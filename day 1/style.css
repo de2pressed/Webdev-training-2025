@@ -1,0 +1,7 @@
+body {
+    display: flex;
+}
+div {
+    color: blue;
+    font: bold;
+}
