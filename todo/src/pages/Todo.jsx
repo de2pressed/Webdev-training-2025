@@ -3,9 +3,9 @@ import React, { useState } from "react";
 export default function TodoApp() {
   const [todos, setTodos] = useState([
     { id: 1, text: "Watch Neeraj Pepsu workout videos", completed: true },
-    { id: 2, text: "Listen to Neeraj Pepsu podcast", completed: false },
-    { id: 3, text: "pray for Neeraj Pepsu", completed: false },
-    { id: 4, text: "listen to Neeraj Pepsu music", completed: false },
+    { id: 2, text: "Go for a Run", completed: false },
+    { id: 3, text: "Study", completed: false },
+    { id: 4, text: "listen to Music", completed: false },
     { id: 5, text: "Pick up groceries", completed: false },
     { id: 6, text: "Complete Todo App on Frontend Mentor", completed: false },
   ]);
