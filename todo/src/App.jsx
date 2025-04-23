@@ -71,7 +71,7 @@ function App(){
       <Route exact path="/Login" element={<Login />} />
       <Route exact path="/Register" element={<Register />} />
       <Route exact path="/TodoApp" element={<TodoApp />} /> 
-      <Route exact path="/neerajpepsu" element={<Neerajpepsu/>}/>
+
       <Route exact path="/Home" element={<Home />}/>
       <Route exact path="/" element={<Navigate to="/home" replace />} />
       </Routes>
