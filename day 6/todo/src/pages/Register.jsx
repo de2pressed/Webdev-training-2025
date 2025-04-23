@@ -6,14 +6,12 @@ function Register(){
                     <div className="max-w-[440px] w-full bg-white rounded px-8 py-10" x-data="signUpForm()">
                         {/* <!-- Logo --> */}
                         <div className="text-center mb-6">
-                            <h1 className="text-2xl font-normal tracking-wide text-bold">LQRS.com</h1>
+
                         </div>
         
                         {/* <!-- Header --> */}
                         <h2 className="text-xl font-normal text-center mb-2 font-bold">Register</h2>
-                        <p className="text-gray-500 text-center text-lg mb-8">
-                            Join LQRS.com to discover our premium spirits collection
-                        </p>
+
         
                         {/* <!-- Form --> */}
                         <form className="space-y-5" >
@@ -60,7 +58,7 @@ function Register(){
                             <label className="flex items-start gap-3 cursor-pointer">
                                 <input type="checkbox" x-model="form.marketing" className="mt-1.5 w-4 h-4 border-gray-300 rounded" />
                                 <span className="text-gray-500 text-base">
-                                    Keep me updated about premium spirits, exclusive offers and special events from LQRS.com
+                                    Accept Terms and Conditions
                                 </span>
                             </label>
         

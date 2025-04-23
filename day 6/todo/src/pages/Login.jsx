@@ -12,10 +12,7 @@ function Login(){
   <div className="h-screen flex justify-center items-center backdrop-brightness-50">
     <div className="flex flex-col items-center space-y-8">
       <div>
-        <img
-          src="https://res.cloudinary.com/dkt1t22qc/image/upload/v1742348949/Prestataires_Documents/smj7n1bdlpjsfsotwpco.png"
-          alt="TyBot Logo"
-          className="cursor-pointer" />
+        
       </div>
       <div
          className="rounded-[20px] w-80 p-8 bg-[#310D84]"

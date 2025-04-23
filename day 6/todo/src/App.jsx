@@ -1,16 +1,16 @@
-import { BrowserRouter, Link, Route, Routes, useNavigate } from "react-router-dom";
+import { BrowserRouter, Link, Route, Routes, useNavigate, Navigate } from "react-router-dom";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import TodoApp from "./pages/Todo";
-
+import Neerajpepsu from "./pages/neerajpepsu";
+import Home from "./pages/Home";
 
 function App(){
   return(
     <>
       <header className="bg-white">
   <div className="mx-auto flex h-16 max-w-screen-xl items-center gap-8 px-4 sm:px-6 lg:px-8">
-    <a className="block text-teal-600" href="#">
-      <img src=""></img>
+    <Link to={"/Home"}><a className="block text-teal-600" href="#">
       <span className="sr-only">Home</span>
       <svg className="h-8" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
@@ -18,31 +18,14 @@ function App(){
           fill="currentColor"
         />
       </svg>
-    </a>
+    </a></Link>
 
     <div className="flex flex-1 items-center justify-end md:justify-between">
       <nav aria-label="Global" className="hidden md:block">
         <ul className="flex items-center gap-6 text-sm">
           <li>
-            <a className="text-gray-500 transition hover:text-gray-500/75" href="#"> <b>neeraj pepsu dil me base</b> </a>
+            <Link to={"/neerajpepsu"}><a className="text-gray-500 transition hover:text-gray-500/75" href="#"> <b>neeraj pepsu dil me base</b> </a></Link>
           </li>
-
-          <li>
-            <a className="text-gray-500 transition hover:text-gray-500/75" href="#">  </a>
-          </li>
-
-          <li>
-            <a className="text-gray-500 transition hover:text-gray-500/75" href="#"> </a>
-          </li>
-
-          <li>
-            <a className="text-gray-500 transition hover:text-gray-500/75" href="#">  </a>
-          </li>
-
-          <li>
-            <a className="text-gray-500 transition hover:text-gray-500/75" href="#">  </a>
-          </li>
-
           <li>
             <Link to={"/TodoApp"}><a className="text-gray-500 transition hover:text-gray-500/75" href="#">  ToDo </a></Link>
           </li>
@@ -89,9 +72,13 @@ function App(){
       <Route exact path="/Login" element={<Login />} />
       <Route exact path="/Register" element={<Register />} />
       <Route exact path="/TodoApp" element={<TodoApp />} /> 
+      <Route exact path="/neerajpepsu" element={<Neerajpepsu/>}/>
+      <Route exact path="/Home" element={<Home />}/>
+      <Route exact path="/" element={<Navigate to="/home" replace />} />
       </Routes>
 
     </>
+    
   );
 };
 

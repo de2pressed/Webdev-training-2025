@@ -2,10 +2,10 @@ import React, { useState } from "react";
 
 export default function TodoApp() {
   const [todos, setTodos] = useState([
-    { id: 1, text: "Complete online JavaScript course", completed: true },
-    { id: 2, text: "Jog around the park 3x", completed: false },
-    { id: 3, text: "10 minutes meditation", completed: false },
-    { id: 4, text: "Read for 1 hour", completed: false },
+    { id: 1, text: "Watch Neeraj Pepsu workout videos", completed: true },
+    { id: 2, text: "Listen to Neeraj Pepsu podcast", completed: false },
+    { id: 3, text: "pray for Neeraj Pepsu", completed: false },
+    { id: 4, text: "listen to Neeraj Pepsu music", completed: false },
     { id: 5, text: "Pick up groceries", completed: false },
     { id: 6, text: "Complete Todo App on Frontend Mentor", completed: false },
   ]);
