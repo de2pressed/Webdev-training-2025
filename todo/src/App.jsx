@@ -2,7 +2,6 @@ import { BrowserRouter, Link, Route, Routes, useNavigate, Navigate } from "react
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import TodoApp from "./pages/Todo";
-import Neerajpepsu from "./pages/neerajpepsu";
 import Home from "./pages/Home";
 
 function App(){
@@ -24,7 +23,7 @@ function App(){
       <nav aria-label="Global" className="hidden md:block">
         <ul className="flex items-center gap-6 text-sm">
           <li>
-            <Link to={"/neerajpepsu"}><a className="text-gray-500 transition hover:text-gray-500/75" href="#"> <b>neeraj pepsu dil me base</b> </a></Link>
+            <a className="text-gray-500 transition hover:text-gray-500/75" href="#"></a>
           </li>
           <li>
             <Link to={"/TodoApp"}><a className="text-gray-500 transition hover:text-gray-500/75" href="#">  ToDo </a></Link>
